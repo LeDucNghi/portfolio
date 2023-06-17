@@ -1,5 +1,7 @@
 .header_wrapper {
-    position: relative;
+    position: fixed;
+
+    top: 0;
 
     display: flex;
     justify-content: space-between;
@@ -36,8 +38,6 @@
     }
 
     .header_nav_link {
-        // width: 40%;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -50,6 +50,7 @@
             font-family: "Source Sans Pro", sans-serif;
             font-weight: 700;
             text-transform: uppercase;
+            color: #000;
 
             transition: all 0.3s ease-in-out;
 

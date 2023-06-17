@@ -1,5 +1,7 @@
 import "./Header.scss";
 
+import { headerNavLinks } from "../../constants/clusterWidgets";
+
 export function Header() {
   return (
     <div className="header_wrapper">
@@ -8,10 +10,13 @@ export function Header() {
       </div>
 
       <div className="header_nav_link">
-        <a className="nav_link">home</a>
-        <a className="nav_link">about</a>
-        <a className="nav_link">projects</a>
-        <a className="nav_link">contact</a>
+        {headerNavLinks.map((nav, key) => {
+          return (
+            <a href={nav.ref} key={key} className="nav_link">
+              {nav.name}
+            </a>
+          );
+        })}
       </div>
     </div>
   );
