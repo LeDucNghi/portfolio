@@ -1,0 +1,40 @@
+.heading_wrapper {
+    background: transparent;
+    text-align: center;
+    span {
+        &:first-child {
+            position: relative;
+
+            display: block;
+
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #111;
+
+            margin-bottom: 1em;
+            font-weight: 700;
+
+            background: transparent;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: calc(100% + 1.5rem);
+                height: 5px;
+                width: 3rem;
+                background: #facf0f;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 5px;
+            }
+        }
+
+        &:nth-child(2) {
+            font-size: 1.7em;
+            font-weight: 500;
+            color: #999;
+        }
+    }
+}

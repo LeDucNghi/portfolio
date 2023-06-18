@@ -1,5 +1,6 @@
 import "./assets/styles/globalStyles.scss";
 
+import { About } from "./components/About/About";
 import { Banner } from "./components/Banner/Banner";
 import { Header } from "./components/Header/Header";
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <Banner />
+      <About />
     </>
   );
 }
