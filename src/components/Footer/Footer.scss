@@ -1,0 +1,108 @@
+footer {
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    font-size: 13px;
+
+    margin: 9em auto 0 auto;
+
+    padding: 1em 2em;
+
+    border-top: 0.1em solid #ccc;
+
+    .main_lower {
+        width: 80%;
+        height: 7.7em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0 auto;
+
+        border-top: 0.1em solid #ccc;
+
+        background: transparent;
+    }
+
+    .main_upper {
+        width: 80%;
+        height: 20em;
+
+        margin: 0 auto;
+        background: transparent;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .content_row {
+            width: 30%;
+
+            display: flex;
+            flex-direction: column;
+
+            background: transparent;
+
+            font-family: "Source Sans Pro", sans-serif;
+            color: #000;
+
+            &.lower {
+                width: 80%;
+            }
+
+            h2 {
+                font-weight: 700;
+                font-size: 1.7em;
+                text-transform: uppercase;
+                line-height: 2.5em;
+                letter-spacing: 0.1em;
+                background: transparent;
+            }
+
+            p {
+                font-size: 1.2em;
+                background: transparent;
+                color: #999;
+            }
+
+            .icons {
+                width: 100%;
+
+                display: flex;
+                justify-content: space-between;
+
+                background: transparent;
+
+                padding-right: 50%;
+
+                a {
+                    width: 3em;
+                    height: 3em;
+
+                    margin: 0.5em 0;
+
+                    transition: all 0.3s ease-in-out;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    border-radius: 0.5em;
+
+                    img {
+                        width: 80%;
+                        height: 80%;
+
+                        object-fit: contain;
+
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

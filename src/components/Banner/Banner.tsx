@@ -35,7 +35,6 @@ export function Banner() {
         </div>
 
         <div className="banner_avt">
-          {/* <img className="avatar" src={Images.avatar} alt="" /> */}
           <img className="borders" src={Images.avatarShape} alt="" />
         </div>
       </div>

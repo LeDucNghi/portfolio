@@ -1,96 +1,84 @@
-.about_container {
+.about_content {
     position: relative;
 
-    width: 80%;
+    width: 100%;
 
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    font-size: 13px;
+    margin-top: 7em;
 
-    margin-top: 9em;
+    background: transparent;
 
-    .about_content {
-        position: relative;
-
-        width: 100%;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        margin-top: 7em;
+    .about {
+        width: 45%;
+        height: 38em;
 
         background: transparent;
+    }
 
-        .about {
-            width: 45%;
-            height: 38em;
+    .content_title {
+        font-size: 2.1em;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        line-height: 3.3em;
+    }
 
-            background: transparent;
-        }
-
-        .content_title {
-            font-size: 2.1em;
+    .about_content_main {
+        p {
+            color: #999;
+            font-size: 1.4em;
+            line-height: 2em;
             font-family: "Source Sans Pro", sans-serif;
-            font-weight: 700;
-            line-height: 3.3em;
         }
+    }
 
-        .about_content_main {
-            p {
-                color: #999;
-                font-size: 1.4em;
-                line-height: 2em;
+    .about_skills {
+        .skill_container {
+            position: relative;
+
+            width: 100%;
+
+            display: flex;
+            flex-wrap: wrap;
+            background: transparent;
+
+            .skill_item {
+                padding: 1em;
+
+                background: #e7e7e7;
+                font-weight: 700;
+                color: #666666;
+                font-size: 1.2em;
+
                 font-family: "Source Sans Pro", sans-serif;
-            }
-        }
-
-        .about_skills {
-            .skill_container {
-                position: relative;
-
-                width: 100%;
 
                 display: flex;
-                flex-wrap: wrap;
-                background: transparent;
+                justify-content: space-between;
 
-                .skill_item {
-                    padding: 1em;
+                margin-bottom: 1em;
+                margin-right: 1em;
 
-                    background: #e7e7e7;
-                    font-weight: 700;
-                    color: #666666;
-                    font-size: 1.2em;
+                border-radius: 0.5em;
 
-                    font-family: "Source Sans Pro", sans-serif;
+                cursor: pointer;
 
-                    display: flex;
-                    justify-content: space-between;
+                .skill_logo {
+                    width: 1em;
+                    height: 1em;
 
-                    margin-bottom: 1em;
-                    margin-right: 1em;
+                    margin-right: 0.5em;
 
-                    border-radius: 0.5em;
+                    background: transparent;
 
-                    cursor: pointer;
+                    img {
+                        width: 100%;
+                        height: 100%;
 
-                    .skill_logo {
-                        width: 1em;
-                        height: 1em;
-
-                        margin-right: 0.5em;
+                        object-fit: contain;
 
                         background: transparent;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-
-                            object-fit: contain;
-
-                            background: transparent;
-                        }
                     }
                 }
             }

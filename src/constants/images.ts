@@ -2,6 +2,7 @@ import avatar from "../assets/images/avatar.jpeg";
 import avatarShape from "../assets/images/svg/avatarShape.svg";
 import css from "../assets/images/techs/css.png";
 import facebook from "../assets/images/socials/facebook.png";
+import figma from "../assets/images/techs/figma.png";
 import github from "../assets/images/socials/github.png";
 import html from "../assets/images/techs/html.png";
 import iconAvatar from "../assets/images/iconAvatar.png";
@@ -41,6 +42,7 @@ export const Images = {
   typescript,
   react,
   redux,
+  figma,
 
   // thumbnails
   pvfoodThumbnail,

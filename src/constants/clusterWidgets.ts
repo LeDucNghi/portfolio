@@ -103,6 +103,20 @@ export const skills = [
     logo: Images.redux,
     bgColor: "#764abc",
   },
+
+  {
+    id: 11,
+    tech: "MYSQL",
+    logo: Images.mysql,
+    bgColor: "#00758f",
+  },
+
+  {
+    id: 12,
+    tech: "Figma",
+    logo: Images.figma,
+    bgColor: "#0cb47c",
+  },
 ];
 
 export const projects = [
@@ -121,9 +135,34 @@ export const projects = [
       },
       {
         id: 2,
-        tech: "CSS",
-        logo: Images.css,
+        tech: "SCSS",
+        logo: Images.sass,
         bgColor: "#2965f1",
+      },
+      {
+        id: 3,
+        tech: "ExpressJS",
+        logo: Images.nodejs,
+        bgColor: "#68a063",
+      },
+
+      {
+        id: 5,
+        tech: "Redux-toolkit",
+        logo: Images.redux,
+        bgColor: "#764abc",
+      },
+      {
+        id: 6,
+        tech: "Redux-thunk",
+        logo: Images.redux,
+        bgColor: "#764abc",
+      },
+      {
+        id: 7,
+        tech: "TypeScript",
+        logo: Images.typescript,
+        bgColor: "#007acc",
       },
     ],
     githubLink: "https://github.com/LeDucNghi/KatenBlog",
@@ -147,6 +186,31 @@ export const projects = [
         tech: "CSS",
         logo: Images.css,
         bgColor: "#2965f1",
+      },
+      {
+        id: 3,
+        tech: "JavaScript",
+        logo: Images.js,
+        bgColor: "#f0db4f",
+      },
+      {
+        id: 4,
+        tech: "ReactJS",
+        logo: Images.react,
+        bgColor: "#61dafb",
+      },
+
+      {
+        id: 6,
+        tech: "Redux-toolkit",
+        logo: Images.redux,
+        bgColor: "#764abc",
+      },
+      {
+        id: 7,
+        tech: "Redux-thunk",
+        logo: Images.redux,
+        bgColor: "#764abc",
       },
     ],
     githubLink: "https://github.com/LeDucNghi/PVStore",
