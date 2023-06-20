@@ -1,22 +1,21 @@
 import "./Projects.scss";
 
 import { ProjectItems } from "./ProjectItems";
-import { Section } from "../HeadingSection/Section";
+import { Section } from "../Section/Section";
 import { projects } from "../../constants/clusterWidgets";
 
 export function Projects() {
   return (
-    <>
-      <Section
-        sectionName="projects"
-        sectionDescribe="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
-      >
-        <div className="project_wrapper">
-          {projects.map((project, key) => {
-            return <ProjectItems key={key} items={project} />;
-          })}
-        </div>
-      </Section>
-    </>
+    <Section
+      sectionName="projects"
+      sectionDescribe="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
+      id="projects"
+    >
+      <>
+        {projects.map((project, key) => {
+          return <ProjectItems key={key} items={project} />;
+        })}
+      </>
+    </Section>
   );
 }

@@ -2,6 +2,7 @@ export interface ISectionProps {
   sectionName: string;
   sectionDescribe: string;
   children: JSX.Element;
+  id: string;
 }
 
 import "./Section.scss";
@@ -10,9 +11,10 @@ export function Section({
   sectionName,
   sectionDescribe,
   children,
+  id,
 }: ISectionProps) {
   return (
-    <div className="section_wrapper">
+    <div id={id} className="section_wrapper">
       <div className="heading_container">
         <span>{sectionName} </span>
 

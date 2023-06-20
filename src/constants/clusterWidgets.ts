@@ -22,22 +22,22 @@ export const headerNavLinks = [
   {
     id: 1,
     name: "home",
-    ref: "",
+    ref: "#banner",
   },
   {
     id: 2,
     name: "about",
-    ref: "",
+    ref: "#about",
   },
   {
     id: 3,
     name: "projects",
-    ref: "",
+    ref: "#projects",
   },
   {
     id: 4,
     name: "contact",
-    ref: "",
+    ref: "#contact",
   },
 ];
 
@@ -117,6 +117,13 @@ export const skills = [
     logo: Images.figma,
     bgColor: "#0cb47c",
   },
+
+  {
+    id: 13,
+    tech: "Responsive Design",
+    logo: "",
+    bgColor: "#0cb47c",
+  },
 ];
 
 export const projects = [
@@ -162,6 +169,13 @@ export const projects = [
         id: 7,
         tech: "TypeScript",
         logo: Images.typescript,
+        bgColor: "#007acc",
+      },
+
+      {
+        id: 8,
+        tech: "MYSQL",
+        logo: Images.mysql,
         bgColor: "#007acc",
       },
     ],

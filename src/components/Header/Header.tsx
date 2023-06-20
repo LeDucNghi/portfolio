@@ -3,6 +3,10 @@ import "./Header.scss";
 import { headerNavLinks } from "../../constants/clusterWidgets";
 
 export function Header() {
+  const handleScrollTo = (id: string) => {
+    window.location.href = id;
+  };
+
   return (
     <div className="header_wrapper">
       <div className="header_logo_container">
@@ -17,6 +21,7 @@ export function Header() {
               key={key}
               className="nav_link"
               rel="noreferrer noopener"
+              onClick={() => handleScrollTo(nav.ref)}
             >
               {nav.name}
             </a>

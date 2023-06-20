@@ -5,7 +5,7 @@ import { socialButton } from "../../constants/clusterWidgets";
 
 export function Banner() {
   return (
-    <div className="banner_wrapper">
+    <div className="banner_wrapper" id="banner">
       <div className="social_button_wrapper">
         {socialButton.map((button, key) => {
           return (
