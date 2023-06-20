@@ -6,13 +6,17 @@ import github from "../assets/images/socials/github.png";
 import html from "../assets/images/techs/html.png";
 import iconAvatar from "../assets/images/iconAvatar.png";
 import js from "../assets/images/techs/js.png";
+import katenblogThumbnail from "../assets/images/thumbnails/katenblog-thumbnail.jpg";
 import linkedin from "../assets/images/socials/linkedin.png";
 import muiLogo from "../assets/images/svg/muiLogo.svg";
 import mysql from "../assets/images/techs/mysql.png";
 import nodejs from "../assets/images/techs/nodejs.png";
+import pvfoodThumbnail from "../assets/images/thumbnails/pvfood-thumbnail.jpg";
 import react from "../assets/images/svg/react.svg";
 import redux from "../assets/images/svg/redux.svg";
 import sass from "../assets/images/techs/sass.png";
+import share from "../assets/images/share.png";
+import thumbnail from "../assets/images/thumbnail.png";
 import typescript from "../assets/images/techs/typescript.png";
 
 export const Images = {
@@ -21,6 +25,7 @@ export const Images = {
   github,
   facebook,
 
+  // avatars
   avatarShape,
   avatar,
   iconAvatar,
@@ -36,4 +41,12 @@ export const Images = {
   typescript,
   react,
   redux,
+
+  // thumbnails
+  pvfoodThumbnail,
+  katenblogThumbnail,
+
+  // others
+  thumbnail,
+  share,
 };

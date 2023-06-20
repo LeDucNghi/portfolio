@@ -12,7 +12,12 @@ export function Header() {
       <div className="header_nav_link">
         {headerNavLinks.map((nav, key) => {
           return (
-            <a href={nav.ref} key={key} className="nav_link">
+            <a
+              href={nav.ref}
+              key={key}
+              className="nav_link"
+              rel="noreferrer noopener"
+            >
               {nav.name}
             </a>
           );
