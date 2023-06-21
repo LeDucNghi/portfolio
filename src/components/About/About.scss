@@ -17,7 +17,7 @@
         position: relative;
 
         width: 45%;
-        height: 55em;
+        height: 50em;
 
         background: transparent;
     }
@@ -32,7 +32,7 @@
     .about_content_main {
         p {
             color: #999;
-            font-size: 1.4em;
+            font-size: 1.2em;
             line-height: 2em;
         }
     }
@@ -82,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
     .about_content {
         flex-direction: column;
 
@@ -92,7 +92,3 @@
         }
     }
 }
-
-// @media only screen and (min-width: 601px) and (max-width: 800px) {
-
-// }

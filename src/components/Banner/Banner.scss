@@ -278,7 +278,7 @@
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
     .banner_wrapper {
-        font-size: 12px;
+        font-size: 11px;
 
         .social_button_wrapper {
             .social_icon_link {
@@ -297,6 +297,7 @@
             .banner_text {
                 h1 {
                     font-size: 2em;
+                    letter-spacing: 0.1em;
                 }
 
                 p {

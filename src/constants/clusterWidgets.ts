@@ -139,7 +139,7 @@ export const projects = [
     thumbnail: Images.katenblogThumbnail,
     title: "Katen Blog",
     description:
-      "A blog posts website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
+      "This website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
     techs: [
       {
         id: 1,
@@ -194,7 +194,7 @@ export const projects = [
     thumbnail: Images.pvfoodThumbnail,
     title: "PV Store",
     description:
-      "A blog posts website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
+      "This website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
     techs: [
       {
         id: 1,
