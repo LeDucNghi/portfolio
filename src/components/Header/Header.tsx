@@ -14,11 +14,15 @@ export function Header({ handleScrollTo }: IHeaderProps) {
 
   return (
     <div className="header_wrapper">
-      <div className="header_logo_container">
+      <a
+        href=""
+        onClick={() => handleScrollToView("", "home")}
+        className="header_logo_container"
+      >
         <img src={Images.cv2} alt="" />
 
         <span>lê đức nghị</span>
-      </div>
+      </a>
 
       <div className="header_nav_link">
         {headerNavLinks.map((nav, key) => {
