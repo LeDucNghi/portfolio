@@ -4,12 +4,12 @@ import { Images } from "../../constants/images";
 import { headerNavLinks } from "../../constants/clusterWidgets";
 
 export interface IHeaderProps {
-  handleScrollTo: (id: string) => any;
+  handleScrollTo: (id: string, name: string) => any;
 }
 
 export function Header({ handleScrollTo }: IHeaderProps) {
-  const handleScrollToView = (id: string) => {
-    handleScrollTo(id);
+  const handleScrollToView = (id: string, name: string) => {
+    handleScrollTo(id, name);
   };
 
   return (
@@ -24,11 +24,11 @@ export function Header({ handleScrollTo }: IHeaderProps) {
         {headerNavLinks.map((nav, key) => {
           return (
             <a
-              href={nav.ref}
+              href={nav?.ref}
               key={key}
               className="nav_link"
               rel="noreferrer noopener"
-              onClick={() => handleScrollToView(nav.ref)}
+              onClick={() => handleScrollToView(nav.ref, nav.name)}
             >
               {nav.name}
             </a>

@@ -14,7 +14,7 @@ export function Section({
   id,
 }: ISectionProps) {
   return (
-    <section id={id} className="section_wrapper">
+    <div id={id} className="section_wrapper">
       <div className="heading_container">
         <span>{sectionName} </span>
 
@@ -22,6 +22,6 @@ export function Section({
       </div>
 
       <div className="content_container">{children}</div>
-    </section>
+    </div>
   );
 }

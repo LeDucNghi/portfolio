@@ -8,11 +8,13 @@ import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Projects/Projects";
 
 function App() {
-  const handleScrollTo = (id: string) => {
+  const handleScrollTo = (id: string, name: string) => {
     const element = document.getElementById(id);
 
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      if (name === "home") {
+        window.scrollTo(0, 0);
+      } else element.scrollIntoView({ behavior: "smooth" });
     }
   };
 

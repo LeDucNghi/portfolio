@@ -22,7 +22,7 @@ export const headerNavLinks = [
   {
     id: 1,
     name: "home",
-    ref: "#banner",
+    ref: "",
   },
   {
     id: 2,
