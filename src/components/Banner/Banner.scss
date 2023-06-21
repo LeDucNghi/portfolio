@@ -10,6 +10,11 @@
 
     background: transparent;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
     .social_button_wrapper {
         position: absolute;
 
@@ -74,6 +79,7 @@
 
         display: flex;
         justify-content: space-between;
+        align-items: center;
 
         .hero {
             position: relative;
@@ -122,108 +128,106 @@
             }
         }
 
-        img {
-            width: 100%;
-            height: 100%;
+        .banner_text {
+            width: 50%;
 
-            object-fit: contain;
+            font-family: "Source Sans Pro", sans-serif;
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
             background: transparent;
-        }
-    }
 
-    .banner_text {
-        width: 50%;
+            .content_items {
+                margin-bottom: 0.7em;
+            }
 
-        font-family: "Source Sans Pro", sans-serif;
+            h1 {
+                text-transform: capitalize;
+                font-weight: 800;
+                letter-spacing: 0.2em;
+                font-size: 3em;
+                line-height: 1em;
+            }
 
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+            p {
+                font-size: 1.5em;
+                text-align: left;
+                color: #999;
+            }
 
-        background: transparent;
+            button {
+                width: 17em;
+                height: 3em;
 
-        .content_items {
-            margin-bottom: 0.7em;
-        }
+                background: #ff8551;
 
-        h1 {
-            text-transform: capitalize;
-            font-weight: 800;
-            letter-spacing: 0.2em;
-            font-size: 3em;
-            line-height: 1em;
-        }
+                border-radius: 0.5em;
 
-        p {
-            font-size: 1.5em;
-            text-align: left;
-            color: #999;
-        }
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                font-size: 1.3em;
+                text-align: center;
+                text-transform: uppercase;
 
-        button {
-            width: 17em;
-            height: 3em;
+                box-shadow: 2.1px 2.1px 2.7px rgba(0, 0, 0, 0.022), 5.2px 5.2px 6.9px rgba(0, 0, 0, 0.031),
+                    10.6px 10.6px 14.2px rgba(0, 0, 0, 0.039), 21.9px 21.9px 29.2px rgba(0, 0, 0, 0.048),
+                    60px 60px 80px rgba(0, 0, 0, 0.07);
 
-            background: #ff8551;
+                transition: transform 0.3s ease-in-out;
 
-            border-radius: 0.5em;
-
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            font-size: 1.3em;
-            text-align: center;
-            text-transform: uppercase;
-
-            box-shadow: 2.1px 2.1px 2.7px rgba(0, 0, 0, 0.022), 5.2px 5.2px 6.9px rgba(0, 0, 0, 0.031),
-                10.6px 10.6px 14.2px rgba(0, 0, 0, 0.039), 21.9px 21.9px 29.2px rgba(0, 0, 0, 0.048),
-                60px 60px 80px rgba(0, 0, 0, 0.07);
-
-            transition: transform 0.3s ease-in-out;
-
-            &:hover {
-                transform: translateY(-0.2em);
+                &:hover {
+                    transform: translateY(-0.2em);
+                }
             }
         }
     }
-}
-
-.mouse {
-    position: relative;
-
-    margin: 0 auto;
-
-    width: 1.7em;
-    height: 2.7em;
-
-    border: 4px solid #333333;
-    border-radius: 4em;
-
-    &::before {
-        content: "";
+    .mouse_container {
         position: absolute;
+        width: 100%;
 
-        width: 0.3em;
-        height: 0.3em;
+        bottom: 0;
 
-        top: 0.5em;
-        left: 50%;
-        transform: translateX(-50%);
+        .mouse {
+            position: relative;
 
-        background-color: #333;
+            margin: 0 auto;
 
-        border-radius: 50%;
-        opacity: 1;
-        animation: mouse 2s infinite;
-    }
+            width: 1.7em;
+            height: 2.7em;
 
-    @keyframes mouse {
-        from {
-            opacity: 1;
-            top: 0.5em;
-        }
-        to {
-            opacity: 0;
-            top: 2em;
+            border: 4px solid #333333;
+            border-radius: 4em;
+
+            &::before {
+                content: "";
+                position: absolute;
+
+                width: 0.3em;
+                height: 0.3em;
+
+                top: 0.5em;
+                left: 50%;
+                transform: translateX(-50%);
+
+                background-color: #333;
+
+                border-radius: 50%;
+                opacity: 1;
+                animation: mouse 2s infinite;
+            }
+
+            @keyframes mouse {
+                from {
+                    opacity: 1;
+                    top: 0.5em;
+                }
+                to {
+                    opacity: 0;
+                    top: 2em;
+                }
+            }
         }
     }
 }

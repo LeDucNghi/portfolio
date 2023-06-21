@@ -16,8 +16,6 @@
 
         padding: 1em 0;
 
-        font-family: "Source Sans Pro", sans-serif;
-
         margin: 1em auto;
 
         label {
@@ -46,6 +44,7 @@
 
         textarea {
             height: 20em;
+            resize: none;
         }
     }
 }

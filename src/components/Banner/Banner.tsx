@@ -36,12 +36,14 @@ export function Banner() {
 
         <div className="hero">
           <div className="avatar">
-            <img src={Images.cv} alt="blob" />
+            <img src={Images.cv2} alt="blob" />
           </div>
         </div>
       </div>
 
-      <div className="mouse"></div>
+      <div className="mouse_container">
+        <div className="mouse"></div>
+      </div>
     </div>
   );
 }
