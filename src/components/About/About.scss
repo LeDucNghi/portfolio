@@ -1,3 +1,5 @@
+@use "../../assets/styles/widgets.scss";
+
 .about_content {
     position: relative;
 
@@ -50,40 +52,11 @@
             background: transparent;
 
             .skill_item {
-                padding: 1em;
-
-                background: #e7e7e7;
-                font-weight: 700;
-                color: #666666;
-                font-size: 1.2em;
-
-                display: flex;
-                justify-content: space-between;
-
-                margin-bottom: 1em;
-                margin-right: 1em;
-
-                border-radius: 0.5em;
-
-                cursor: pointer;
-
-                transition: all 0.3s ease-in-out;
+                @include widgets.techItems;
 
                 &:hover {
                     .skill_logo {
-                        background-color: #fff;
-                        border-radius: 50%;
-
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        transition: all 0.3s ease-in-out;
-
-                        img {
-                            width: 80%;
-                            height: 80%;
-                        }
+                        @include widgets.techLogoHover;
                     }
                 }
 
@@ -109,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .about_content {
         flex-direction: column;
 
@@ -119,3 +92,7 @@
         }
     }
 }
+
+// @media only screen and (min-width: 601px) and (max-width: 800px) {
+
+// }
