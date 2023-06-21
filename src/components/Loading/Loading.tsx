@@ -1,10 +1,5 @@
 import "./Loading.scss";
 
-import * as React from "react";
-
-// export interface IAppProps {
-// }
-
 export function Loading() {
   // props: IAppProps
   return (
