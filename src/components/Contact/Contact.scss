@@ -55,7 +55,7 @@
 
         margin: 0 auto;
 
-        button {
+        input {
             position: relative;
 
             padding: 1em;
@@ -81,6 +81,11 @@
 
             &:hover {
                 transform: translateY(-0.2em);
+            }
+
+            &:disabled {
+                cursor: not-allowed;
+                background: #999;
             }
         }
     }

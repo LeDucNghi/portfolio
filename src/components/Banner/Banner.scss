@@ -242,9 +242,6 @@
         .banner_content {
             width: 90%;
 
-            top: 40%;
-            transform: translateY(-40%);
-
             text-align: center;
 
             .banner_avt {
@@ -266,13 +263,15 @@
             }
         }
 
-        .mouse {
-            position: absolute;
+        .mouse_container {
+            .mouse {
+                position: absolute;
 
-            bottom: 0;
+                bottom: 0;
 
-            left: 50%;
-            transform: translateX(-50%);
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
     }
 }

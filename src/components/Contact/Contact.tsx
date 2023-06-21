@@ -1,13 +1,24 @@
 import "./Contact.scss";
 
 import { Section } from "../Section/Section";
+import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 export function Contact() {
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    email: "",
+    content: "",
+  });
+
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
+    setIsLoading(true);
+
+    await emailjs
       .sendForm(
         "service_2iilvfj",
         "template_6g6gf77",
@@ -17,9 +28,35 @@ export function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+
+          setIsLoading(false);
+
+          setInputValues({
+            name: "",
+            content: "",
+            email: "",
+          });
+
+          Swal.fire({
+            position: "center",
+            icon: "success",
+            title: "Your message has been sent🥳",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         },
         (error) => {
           console.log(error.text);
+
+          setIsLoading(false);
+
+          Swal.fire({
+            position: "center",
+            icon: "error",
+            title: "Something went wrong 🤔",
+            showConfirmButton: false,
+            timer: 1500,
+          });
         }
       );
   };
@@ -33,19 +70,49 @@ export function Contact() {
       <form onSubmit={(e) => sendEmail(e)} className="form_container">
         <div className="contact_fields">
           <label htmlFor="">Name</label>
-          <input type="text" placeholder="Enter Your Name" name="user_name" />
+          <input
+            value={inputValues.name}
+            onChange={(e) =>
+              setInputValues({ ...inputValues, name: e.target.value })
+            }
+            type="text"
+            placeholder="Enter Your Name"
+            name="user_name"
+          />
         </div>
         <div className="contact_fields">
           <label htmlFor="">Email</label>
-          <input type="text" placeholder="Enter Your Email" name="user_email" />
+          <input
+            value={inputValues.email}
+            onChange={(e) =>
+              setInputValues({ ...inputValues, email: e.target.value })
+            }
+            required
+            type="email"
+            placeholder="Enter Your Email"
+            name="user_email"
+          />
         </div>
         <div className="contact_fields">
           <label htmlFor="">Message</label>
-          <textarea rows={50} placeholder="Enter Your Message" name="message" />
+          <textarea
+            value={inputValues.content}
+            onChange={(e) =>
+              setInputValues({ ...inputValues, content: e.target.value })
+            }
+            required
+            rows={50}
+            placeholder="Enter Your Message"
+            name="message"
+          />
         </div>
 
         <div className="form_button">
-          <button type="submit">Send Email</button>
+          <input
+            disabled={isLoading}
+            type="submit"
+            placeholder={isLoading ? "Sending..." : "Send Email"}
+          />
         </div>
       </form>
     </Section>
