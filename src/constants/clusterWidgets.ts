@@ -187,7 +187,7 @@ export const projects = [
       },
     ],
     githubLink: "https://github.com/LeDucNghi/KatenBlog",
-    demoLink: "https://zyro-blog.vercel.app/",
+    demoLink: "https://katen-blog.vercel.app/",
   },
   {
     id: 2,
