@@ -2,7 +2,7 @@ export interface ISectionProps {
   sectionName: string;
   sectionDescribe: string;
   children: JSX.Element;
-  id: string;
+  id?: string;
 }
 
 import "./Section.scss";

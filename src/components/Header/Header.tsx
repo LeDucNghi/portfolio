@@ -3,9 +3,13 @@ import "./Header.scss";
 import { Images } from "../../constants/images";
 import { headerNavLinks } from "../../constants/clusterWidgets";
 
-export function Header() {
-  const handleScrollTo = (id: string) => {
-    window.location.href = id;
+export interface IHeaderProps {
+  handleScrollTo: (id: string) => any;
+}
+
+export function Header({ handleScrollTo }: IHeaderProps) {
+  const handleScrollToView = (id: string) => {
+    handleScrollTo(id);
   };
 
   return (
@@ -24,7 +28,7 @@ export function Header() {
               key={key}
               className="nav_link"
               rel="noreferrer noopener"
-              onClick={() => handleScrollTo(nav.ref)}
+              onClick={() => handleScrollToView(nav.ref)}
             >
               {nav.name}
             </a>

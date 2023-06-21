@@ -8,9 +8,17 @@ import { Header } from "./components/Header/Header";
 import { Projects } from "./components/Projects/Projects";
 
 function App() {
+  const handleScrollTo = (id: string) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-      <Header />
+      <Header handleScrollTo={handleScrollTo} />
       <Banner />
       <About />
       <Projects />

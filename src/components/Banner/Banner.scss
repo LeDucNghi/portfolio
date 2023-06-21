@@ -131,8 +131,6 @@
         .banner_text {
             width: 50%;
 
-            font-family: "Source Sans Pro", sans-serif;
-
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -147,7 +145,7 @@
                 text-transform: capitalize;
                 font-weight: 800;
                 letter-spacing: 0.2em;
-                font-size: 3em;
+                font-size: 3.5em;
                 line-height: 1em;
             }
 
@@ -170,6 +168,7 @@
                 font-size: 1.3em;
                 text-align: center;
                 text-transform: uppercase;
+                color: #fff;
 
                 box-shadow: 2.1px 2.1px 2.7px rgba(0, 0, 0, 0.022), 5.2px 5.2px 6.9px rgba(0, 0, 0, 0.031),
                     10.6px 10.6px 14.2px rgba(0, 0, 0, 0.039), 21.9px 21.9px 29.2px rgba(0, 0, 0, 0.048),
