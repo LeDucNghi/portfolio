@@ -106,3 +106,30 @@ footer {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        font-size: 11px;
+        .main_lower {
+            margin: 1em auto;
+        }
+
+        .main_upper {
+            flex-direction: column;
+
+            .content_row {
+                width: 100%;
+                align-items: center;
+
+                .icons {
+                    padding-right: 0;
+                    justify-content: center;
+
+                    a {
+                        margin: 0 1em;
+                    }
+                }
+            }
+        }
+    }
+}

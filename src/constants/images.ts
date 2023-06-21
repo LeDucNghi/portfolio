@@ -1,6 +1,7 @@
 import avatar from "../assets/images/avatar.jpeg";
 import avatarShape from "../assets/images/svg/avatarShape.svg";
 import css from "../assets/images/techs/css.png";
+import cv from "../assets/images/cv.jpg";
 import facebook from "../assets/images/socials/facebook.png";
 import figma from "../assets/images/techs/figma.png";
 import github from "../assets/images/socials/github.png";
@@ -30,6 +31,7 @@ export const Images = {
   avatarShape,
   avatar,
   iconAvatar,
+  cv,
 
   // techs
   sass,

@@ -34,8 +34,10 @@ export function Banner() {
           <button className="content_items">Projects</button>
         </div>
 
-        <div className="banner_avt">
-          <img className="borders" src={Images.avatarShape} alt="" />
+        <div className="hero">
+          <div className="avatar">
+            <img src={Images.cv} alt="blob" />
+          </div>
         </div>
       </div>
 

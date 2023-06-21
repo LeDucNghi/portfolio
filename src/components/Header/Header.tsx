@@ -1,5 +1,6 @@
 import "./Header.scss";
 
+import { Images } from "../../constants/images";
 import { headerNavLinks } from "../../constants/clusterWidgets";
 
 export function Header() {
@@ -10,6 +11,8 @@ export function Header() {
   return (
     <div className="header_wrapper">
       <div className="header_logo_container">
+        <img src={Images.cv} alt="" />
+
         <span>lê đức nghị</span>
       </div>
 

@@ -20,6 +20,20 @@
         0px 60px 80px rgba(0, 0, 0, 0.07);
 
     .header_logo_container {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 2em;
+            height: 2em;
+
+            border-radius: 50%;
+
+            margin-right: 0.5em;
+
+            object-fit: contain;
+        }
+
         span {
             text-transform: uppercase;
             font-size: 1.3em;
