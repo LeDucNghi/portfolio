@@ -19,6 +19,7 @@ import react from "../assets/images/svg/react.svg";
 import redux from "../assets/images/svg/redux.svg";
 import sass from "../assets/images/techs/sass.png";
 import share from "../assets/images/share.png";
+import tablet from "../assets/images/techs/tablet.png";
 import thumbnail from "../assets/images/thumbnail.png";
 import typescript from "../assets/images/techs/typescript.png";
 
@@ -47,6 +48,7 @@ export const Images = {
   react,
   redux,
   figma,
+  tablet,
 
   // thumbnails
   pvfoodThumbnail,

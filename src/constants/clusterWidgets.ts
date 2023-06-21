@@ -121,7 +121,7 @@ export const skills = [
   {
     id: 13,
     tech: "Responsive Design",
-    logo: "",
+    logo: Images.tablet,
     bgColor: "#0cb47c",
   },
 ];
