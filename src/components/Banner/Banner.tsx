@@ -3,7 +3,12 @@ import "./Banner.scss";
 import { Images } from "../../constants/images";
 import { socialButton } from "../../constants/clusterWidgets";
 
+// export interface IBannerProps {
+//   handleScrollTo: (id: string) => any;
+// }
+
 export function Banner() {
+// { handleScrollTo }: IBannerProps
   return (
     <div className="banner_wrapper" id="banner">
       <div className="social_button_wrapper">
@@ -31,7 +36,12 @@ export function Banner() {
             Ho Chi Minh City.❣️{" "}
           </p>
 
-          <button className="content_items">Projects</button>
+          {/* <button
+            className="content_items"
+            onClick={() => handleScrollToView("#projects")}
+          >
+            Projects
+          </button> */}
         </div>
 
         <div className="hero">

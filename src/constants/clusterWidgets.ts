@@ -106,23 +106,30 @@ export const skills = [
 
   {
     id: 11,
+    tech: "Material UI",
+    logo: Images.muiLogo,
+    bgColor: "#007fff",
+  },
+
+  {
+    id: 12,
     tech: "MYSQL",
     logo: Images.mysql,
     bgColor: "#00758f",
   },
 
   {
-    id: 12,
+    id: 13,
     tech: "Figma",
     logo: Images.figma,
     bgColor: "#0cb47c",
   },
 
   {
-    id: 13,
+    id: 14,
     tech: "Responsive Design",
     logo: Images.tablet,
-    bgColor: "#0cb47c",
+    bgColor: "#72b4ed",
   },
 ];
 

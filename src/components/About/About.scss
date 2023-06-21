@@ -15,7 +15,7 @@
         position: relative;
 
         width: 45%;
-        height: 38em;
+        height: 55em;
 
         background: transparent;
     }
@@ -36,6 +36,10 @@
     }
 
     .about_skills {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
         .skill_container {
             position: relative;
 
@@ -62,6 +66,26 @@
                 border-radius: 0.5em;
 
                 cursor: pointer;
+
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    .skill_logo {
+                        background-color: #fff;
+                        border-radius: 50%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        transition: all 0.3s ease-in-out;
+
+                        img {
+                            width: 80%;
+                            height: 80%;
+                        }
+                    }
+                }
 
                 .skill_logo {
                     width: 1em;

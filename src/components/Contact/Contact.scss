@@ -45,6 +45,43 @@
         textarea {
             height: 20em;
             resize: none;
+
+            padding: 1em;
+        }
+    }
+
+    .form_button {
+        width: 80%;
+
+        margin: 0 auto;
+
+        button {
+            position: relative;
+
+            padding: 1em;
+
+            margin: 1em auto;
+
+            background: #ff8551;
+
+            border-radius: 0.5em;
+
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            font-size: 1.3em;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+
+            box-shadow: 2.1px 2.1px 2.7px rgba(0, 0, 0, 0.022), 5.2px 5.2px 6.9px rgba(0, 0, 0, 0.031),
+                10.6px 10.6px 14.2px rgba(0, 0, 0, 0.039), 21.9px 21.9px 29.2px rgba(0, 0, 0, 0.048),
+                60px 60px 80px rgba(0, 0, 0, 0.07);
+
+            transition: transform 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-0.2em);
+            }
         }
     }
 }

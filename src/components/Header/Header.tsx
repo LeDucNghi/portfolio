@@ -15,7 +15,7 @@ export function Header({ handleScrollTo }: IHeaderProps) {
   return (
     <div className="header_wrapper">
       <div className="header_logo_container">
-        <img src={Images.cv} alt="" />
+        <img src={Images.cv2} alt="" />
 
         <span>lê đức nghị</span>
       </div>

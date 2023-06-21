@@ -18,23 +18,24 @@ export function About() {
         <div className="about_content_main about">
           <h3 className="content_title">Get to know me!</h3>
           <p>
-            I'm a <b>Frontend Web Developer</b> building the Front-end of
-            Websites and Web Applications that leads to the success of the
-            overall product. Check out some of my work in the Projects section.
+            My name is <b>Le Duc Nghi</b> and I have just graduated from{" "}
+            <b>HUTECH University</b> recently with a major in Information
+            Technology. During my time at university, I gained a foundation in
+            HTML/CSS/SASS, especially ReactJS, and had the opportunity to work
+            at Capgemini company as Intern. And I am eager to apply my skills
+            and knowledge to real-world challenges and to continue learning and
+            growing in my field.{" "}
           </p>
 
           <p>
-            I also like sharing content related to the stuff that I have learned
-            over the years in Web Development so it can help other people of the
-            Dev Community. Feel free to Connect or Follow me on my Linkedin
-            where I post useful content related to Web Development and
-            Programming
-          </p>
-
-          <p>
-            I'm open to Job opportunities where I can contribute, learn and
-            grow. If you have a good opportunity that matches my skills and
-            experience then don't hesitate to contact me.
+            Through many projects, I have experience in designing and
+            implementing user interfaces with <b>Figma</b> for web applications.
+            In addition to these core skills, I have also worked with <b>MUI</b>{" "}
+            for building responsive and accessible user interfaces. I have
+            experience with state management using <b>ReduxJS</b> and have used
+            tools such as <b>Redux-Toolkit</b> and <b>Redux-Thunk</b> to manage
+            complex application states. My focus is on creating intuitive and
+            responsive user experiences that meet the needs of the end user.
           </p>
         </div>
 
