@@ -21,10 +21,10 @@ export function About() {
             My name is <b>Le Duc Nghi</b> and I have just graduated from{" "}
             <b>HUTECH University</b> recently with a major in Information
             Technology. During my time at university, I gained a foundation in
-            HTML/CSS/SASS, especially ReactJS, and had the opportunity to work
-            at Capgemini company as Intern. And I am eager to apply my skills
-            and knowledge to real-world challenges and to continue learning and
-            growing in my field.{" "}
+            <b>HTML/CSS/SASS</b>, especially <b>ReactJS</b>, and had the
+            opportunity to work at <b>Capgemini company as Intern</b>. And I am
+            eager to apply my skills and knowledge to real-world challenges and
+            to continue learning and growing in my field.{" "}
           </p>
 
           <p>
