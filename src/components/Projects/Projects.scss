@@ -8,6 +8,26 @@
 
     margin: 0 auto 2em auto;
 
+    &.left {
+        .project_content {
+            order: 2;
+        }
+
+        .project_thumbnail {
+            order: 1;
+        }
+    }
+
+    &.right {
+        .project_content {
+            order: 1;
+        }
+
+        .project_thumbnail {
+            order: 2;
+        }
+    }
+
     .project_thumbnail {
         width: 50%;
         height: 100%;

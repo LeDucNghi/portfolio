@@ -24,18 +24,19 @@ export interface ProjectItems {
 export interface IProjectItemsProps {
   anchorContent?: "left" | "right";
   items: ProjectItems;
+  side?: "left" | "right";
 }
 
-export function ProjectItems({ items }: IProjectItemsProps) {
+export function ProjectItems({ items, side }: IProjectItemsProps) {
   const [isSelected, setIsSelected] = React.useState<number | null>(null);
 
   return (
-    <div className="project_items">
-      <div className="project_thumbnail">
+    <div className={`project_items ${side}`}>
+      <div className={`project_thumbnail`}>
         <img src={items.thumbnail} alt="" />
       </div>
 
-      <div className="project_content">
+      <div className={`project_content`}>
         <h4 className="items">{items.title} </h4>
 
         <p className="items">{items.description}</p>

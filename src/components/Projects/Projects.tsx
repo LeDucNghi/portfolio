@@ -13,7 +13,13 @@ export function Projects() {
     >
       <>
         {projects.map((project, key) => {
-          return <ProjectItems key={key} items={project} />;
+          return (
+            <ProjectItems
+              side={project.id % 2 ? "left" : "right"}
+              key={key}
+              items={project}
+            />
+          );
         })}
       </>
     </Section>
