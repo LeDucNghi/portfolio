@@ -139,7 +139,7 @@ export const projects = [
     thumbnail: Images.katenblogThumbnail,
     title: "Katen Blog",
     description:
-      "This website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
+      "This website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts.",
     techs: [
       {
         id: 1,
@@ -194,7 +194,7 @@ export const projects = [
     thumbnail: Images.pvfoodThumbnail,
     title: "PV Store",
     description:
-      "This website project is a website that is designed to host and display blog posts. These posts can be written by the website owner or by guest authors, and they typically cover a wide range of topics. The website may also include features such as commenting, social media sharing, and categorization of posts. The goal of a blog posts website project is to provide a platform for sharing ideas, opinions, and information with a wider audience.",
+      "This website application is for selling cakes. It allows user order, follow, review and check for order status. And manager can add, edit cakes, manage customers, manage orders, analysis revenues, warning users.",
     techs: [
       {
         id: 1,
