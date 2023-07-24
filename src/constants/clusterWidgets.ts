@@ -179,21 +179,16 @@ export const projects = [
         logo: Images.redux,
         bgColor: "#764abc",
       },
+
       {
         id: 7,
-        tech: "Firebase",
-        logo: Images.firebase,
-        bgColor: "#FFCB2B",
-      },
-      {
-        id: 8,
         tech: "TypeScript",
         logo: Images.typescript,
         bgColor: "#007acc",
       },
 
       {
-        id: 9,
+        id: 8,
         tech: "MYSQL",
         logo: Images.mysql,
         bgColor: "#007acc",
@@ -245,6 +240,12 @@ export const projects = [
         tech: "Redux-thunk",
         logo: Images.redux,
         bgColor: "#764abc",
+      },
+      {
+        id: 8,
+        tech: "Firebase",
+        logo: Images.firebase,
+        bgColor: "#FFCB2B",
       },
     ],
     githubLink: "https://github.com/LeDucNghi/PVStore",
