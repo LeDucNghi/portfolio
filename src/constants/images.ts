@@ -5,6 +5,7 @@ import cv from "../assets/images/cv.jpg";
 import cv2 from "../assets/images/cv2.jpg";
 import facebook from "../assets/images/socials/facebook.png";
 import figma from "../assets/images/techs/figma.png";
+import firebase from "../assets/images/techs/firebase.png"
 import github from "../assets/images/socials/github.png";
 import html from "../assets/images/techs/html.png";
 import iconAvatar from "../assets/images/iconAvatar.png";
@@ -49,6 +50,7 @@ export const Images = {
   redux,
   figma,
   tablet,
+  firebase,
 
   // thumbnails
   pvfoodThumbnail,

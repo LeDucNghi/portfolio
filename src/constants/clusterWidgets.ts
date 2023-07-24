@@ -113,20 +113,27 @@ export const skills = [
 
   {
     id: 12,
+    tech: "Firebase",
+    logo: Images.firebase,
+    bgColor: "#FFCB2B",
+  },
+
+  {
+    id: 13,
     tech: "MYSQL",
     logo: Images.mysql,
     bgColor: "#00758f",
   },
 
   {
-    id: 13,
+    id: 14,
     tech: "Figma",
     logo: Images.figma,
     bgColor: "#0cb47c",
   },
 
   {
-    id: 14,
+    id: 15,
     tech: "Responsive Design",
     logo: Images.tablet,
     bgColor: "#72b4ed",
@@ -174,13 +181,19 @@ export const projects = [
       },
       {
         id: 7,
+        tech: "Firebase",
+        logo: Images.firebase,
+        bgColor: "#FFCB2B",
+      },
+      {
+        id: 8,
         tech: "TypeScript",
         logo: Images.typescript,
         bgColor: "#007acc",
       },
 
       {
-        id: 8,
+        id: 9,
         tech: "MYSQL",
         logo: Images.mysql,
         bgColor: "#007acc",
