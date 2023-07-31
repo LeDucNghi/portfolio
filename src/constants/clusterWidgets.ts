@@ -202,7 +202,7 @@ export const projects = [
     thumbnail: Images.pvfoodThumbnail,
     title: "PV Store",
     description:
-      "This website application is for selling cakes. It allows user order, follow, review and check for order status. And manager can add, edit cakes, manage customers, manage orders, analysis revenues, warning users.",
+      "This website application is for selling food. It allows user storing the user's cart, saving history purchases, filtering products, tracking orders, reviewing products.",
     techs: [
       {
         id: 1,
